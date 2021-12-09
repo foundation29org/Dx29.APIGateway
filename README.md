@@ -33,13 +33,18 @@ It is important to mention that for now this project includes the code of two pr
 
 ####  1. Configuration: Pre-requisites
 
-This project doesn’t have any dependency and doesn’t need any secret value.
+This project doesn’t need any secret value.
+It needs to have the Docker images of the projects it exposes. 
+>- [Dx29.Annotations](TODO_LINK)
+>- [Dx29.BioNET](https://github.com/foundation29org/Dx29.BioNET)
+>- [Dx29.BioEntity](https://github.com/foundation29org/Dx29.Bioentity)
+>- [Dx29.TermSearch2](https://github.com/foundation29org/Dx29.TermSearch2)
 
 <p>&nbsp;</p>
 
 ####  2. Download and installation
 
-DDownload the repository code with `git clone` or use download button.
+Download the repository code with `git clone` or use download button.
 
 We use [Visual Studio 2019](https://docs.microsoft.com/en-GB/visualstudio/ide/quickstart-aspnet-core?view=vs-2022) for working with this project.
 
