@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+  dx29.apigateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - "8180:80"
+      - "8443:443"
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
+  dx29.bioentities:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8181:80"
+
+  dx29.tasearch:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8182:80"
+
+  dx29.termsearch:
+    ports:
+      - "8183:3000"
+
+  dx29.conditionsscore:
+    ports:
+      - "8184:8180"
+    
+  dx29-annotations:
+    ports:
+      - "8185:80"
+    

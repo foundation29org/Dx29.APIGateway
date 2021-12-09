@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  dx29.apigateway:
+    image: ${DOCKER_REGISTRY-}dx29apigateway
+    build:
+      context: .
+      dockerfile: Dx29.APIGateway/Dockerfile
+
+  dx29.bioentities:
+    image: ${DOCKER_REGISTRY-}dx29bioentities
+    build:
+      context: .
+      dockerfile: Dx29.BioEntities/Dockerfile
+
+  dx29.tasearch:
+    image: ${DOCKER_REGISTRY-}dx29tasearch
+    build:
+      context: .
+      dockerfile: Dx29.TASearch/Dockerfile
+
+  dx29.termsearch:
+    image: dx29.termsearch
+ 
+  dx29.conditionsscore:
+    image: dx29.conditionsscore
+
+  dx29-annotations:
+    image: dx29annotationswebapi
