@@ -25,8 +25,6 @@ It is programmed in C#, and the structure of the project is as follows:
 >- manifests folder: with the YAML configuration files for deploy in Azure Container Registry and Azure Kubernetes Service.
 >- pipeline sample YAML file. For automatizate the tasks of build and deploy on Azure.
 
-It is important to mention that for now this project includes the code of two projects that are no longer used (and therefore not necessary): Dx29.Bioenties and Dx29.TASearch. These functionalities have already been migrated to other projects in use.
-
 <p>&nbsp;</p>
 
 ### **Getting Started**
@@ -35,9 +33,8 @@ It is important to mention that for now this project includes the code of two pr
 
 This project doesn’t need any secret value.
 It needs to have the Docker images of the projects it exposes. 
->- [Dx29.Annotations](TODO_LINK)
+>- [Dx29.Annotations](https://github.com/foundation29org/Dx29.Annotations)
 >- [Dx29.BioNET](https://github.com/foundation29org/Dx29.BioNET)
->- [Dx29.BioEntity](https://github.com/foundation29org/Dx29.Bioentity)
 >- [Dx29.TermSearch2](https://github.com/foundation29org/Dx29.TermSearch2)
 
 <p>&nbsp;</p>
